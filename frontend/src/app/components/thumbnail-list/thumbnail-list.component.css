@@ -1,0 +1,32 @@
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.thumbnails button {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: white;
+    cursor: pointer;
+}
+
+.thumbnails button.active {
+    background: #111827;
+    color: white;
+}
+
+button {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: white;
+}
+
+button.active {
+    background: #111827;
+    color: white;
+}

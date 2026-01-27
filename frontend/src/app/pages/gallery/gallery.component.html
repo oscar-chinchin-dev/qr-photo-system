@@ -1,0 +1,23 @@
+<div class="page">
+    <div class="card">
+
+        <h1 class="title">Galería de fotos</h1>
+
+        <app-photo-viewer *ngIf="photos.length > 0" [photo]="photos[selectedIndex]" (buy)="buyPhoto()">
+        </app-photo-viewer>
+
+        <app-photo-controls (prev)="prevPhoto()" (next)="nextPhoto()" (toggleFavorite)="toggleFavorite()">
+        </app-photo-controls>
+
+        <app-thumbnail-list [photos]="photos" [selectedIndex]="selectedIndex" (photoSelected)="onPhotoSelected($event)">
+        </app-thumbnail-list>
+
+        <div *ngIf="selectedPhotos.length > 0" class="selection-info">
+            <p>Fotos seleccionadas: {{ selectedPhotos.length }}</p>
+            <button (click)="buySelection()">Comprar selección</button>
+        </div>
+
+
+
+    </div>
+</div>

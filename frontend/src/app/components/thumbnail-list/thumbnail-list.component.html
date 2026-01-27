@@ -1,0 +1,6 @@
+<div class="thumbnails">
+    <button *ngFor="let photo of photos; let i = index" (click)="photoSelected.emit(i)"
+        [class.active]="i === selectedIndex">
+        {{ i + 1 }}
+    </button>
+</div>

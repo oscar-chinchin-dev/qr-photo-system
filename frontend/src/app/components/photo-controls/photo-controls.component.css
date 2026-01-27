@@ -1,0 +1,18 @@
+:host {
+    display: block;
+    pointer-events: none;
+}
+
+button {
+    pointer-events: auto;
+}
+
+.photo-controls {
+    display: flex;
+    justify-content: center;
+    /* 👈 centra horizontal */
+    align-items: center;
+    gap: 16px;
+    /* espacio entre botones */
+    margin: 24px 0;
+}

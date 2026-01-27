@@ -1,0 +1,25 @@
+<div *ngIf="photo" class="viewer">
+
+    <!-- IMAGEN -->
+    <div class="image-wrapper">
+        <img *ngIf="photo.imagenBase64" [src]="photo.imagenBase64" class="photo-img" alt="Foto seleccionada" />
+
+        <div class="watermark" *ngIf="!photo.pagada">
+            NO PAGADA
+        </div>
+    </div>
+
+    <h3>Foto seleccionada</h3>
+
+    <p>ID: {{ photo.id }}</p>
+    <p>Pagada: {{ photo.pagada }}</p>
+
+    <div *ngIf="photo.pagada" class="paid-badge">
+        ✔ Foto comprada
+    </div>
+
+</div>
+
+<button *ngIf="!photo.pagada" [disabled]="isBuying" (click)="buy.emit()">
+    {{ isBuying ? 'Procesando...' : 'Comprar foto' }}
+</button>

@@ -1,0 +1,56 @@
+.qr-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9fafb;
+}
+
+.qr-card {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.qr-logo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 20px;
+    color: #000000;
+    /* verde elegante */
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #111827;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
