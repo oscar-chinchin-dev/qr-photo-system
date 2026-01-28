@@ -51,3 +51,30 @@ Functional project under continuous improvement.
 Designed with a scalable architecture that allows future extensions,
 such as payment platform integration.
 Focused on learning and applying good software development practices.
+
+## How to Run the Project
+
+### Backend (ASP.NET Core Web API)
+
+1. Open the backend project in Visual Studio
+2. Configure the connection string in `appsettings.json`
+3. Apply database migrations
+4. Run the application
+
+The API will be available at:
+https://localhost:xxxx
+
+### Frontend (Angular)
+
+1. Navigate to the frontend folder
+2. Install dependencies:
+   npm install
+3. Start the development server:
+   ng serve
+
+The application will be available at:
+http://localhost:4200
+
+This project was developed as a learning-focused fullstack application,
+with emphasis on clean architecture, separation of concerns,
+and real-world workflows.
